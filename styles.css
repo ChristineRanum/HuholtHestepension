@@ -10,3 +10,40 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+img {
+    max-width: 100%;
+}
+
+/* GENERAL STYLES */
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.font_raleway {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.font_quicksand {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.hidden {
+    visibility: hidden;
+    size: 0;
+}
+
+/* FRONT PAGE */
+
+.tagline {
+    text-transform: uppercase;
+    font-weight: 500;
+}
