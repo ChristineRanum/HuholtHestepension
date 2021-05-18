@@ -65,14 +65,22 @@ hr {
 
 /* MENU */
 
+.menu {
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 3;
+}
+
 .menu_top {
     display: flex;
     justify-content: space-between;
     height: 14vh;
+    background-color: #FFFFFF;
 }
 
 .menu_logo {
-    margin: .5em;
+    margin: .2em;
 }
 
 .menu_button {
@@ -129,6 +137,95 @@ hr {
     color: #FFFFFF;
     margin-left: 4px;
     font-size: 1.1em;
+}
+
+/* OPEN MENU */
+
+/* BORROWED CODE FROM: https://dev.to/cydstumpel/creating-a-fold-out-navigation-with-css-only-4g9k */
+
+input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    appearance: none;
+    position: fixed;
+  }
+
+  label {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 25px;
+    margin: 35px;
+  }
+  
+  label span {
+    display: block;
+    width: 100%;
+    background: #E280A1;
+    height: 3px;
+    transition: transform 1s;
+  }
+  
+  label span::before,
+  label span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 2px;
+    background: #E280A1;
+    transition: 0.4s
+  }
+  
+  label span::before {
+    top: 0;
+    height: 3px;
+  }
+  
+  label span::after {
+    top: calc(100% - 2px); /* to make the transition easier :) */
+    height: 3px;
+  }
+
+  ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(100vw);
+    transition: transform 0.2s;
+    background: white;
+    list-style-type: none;
+
+  }
+
+  input:checked + label span {
+    transform: rotate(45deg);
+  }
+  
+  input:checked + label span::before, input:checked + label span::after {
+    top: calc(50% - 2px);
+    transition: 0.4s;
+  }
+  input:checked + label span::after {
+    transform: rotate(90deg);
+  }
+
+  input:checked ~ ul {
+    transform: none;
+    transition: transform 0.4s; 
+  }
+
+.menu_list_item {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
 }
 
 /* FOOTER */
@@ -227,6 +324,7 @@ hr {
 
 .hero {
     position: relative;
+    margin-top: 20vh;
 }
 
 .hero_tagline {
@@ -349,3 +447,5 @@ hr {
     font-style: italic;
     margin-top: 1em;
 }
+
+
