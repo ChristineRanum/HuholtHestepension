@@ -10,24 +10,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 class="hidden">Huholt Hestepension - Forside</h1>
+    <h1 class="title_hidden">Forside</h1>
     <header>
         <nav class="menu">
             <section class="menu_top">
-                <img src="graphics/logo.svg" alt="Huholt Hestepension Logo" class="menu_logo">
+                <a href="index.html">
+                    <img src="graphics/logo.svg" alt="Huholt Hestepension Logo" class="menu_logo">
+                </a>
                 <section>
-                    <!-- BORROWED CODE FROM: https://dev.to/cydstumpel/creating-a-fold-out-navigation-with-css-only-4g9k  -->
-                    <input type="checkbox" id="trigger" />
-                    <label aria-label="open main navigation" for="trigger"><span></span></label>
+                    <!-- SOURCE/INSPIRATION: https://dev.to/cydstumpel/creating-a-fold-out-navigation-with-css-only-4g9k  -->
+                    <input class="menu_input" type="checkbox" id="trigger" />
+                    <label class="menu_label" aria-label="open main navigation" for="trigger"><span></span></label>
                     <ul class="menu_list">
                       <li>
-                        <a class="menu_list_item" href="#">Link</a>
+                        <a class="menu_list_item" href="index.html">Forside</a>
                       </li>
                       <li>
-                        <a class="menu_list_item" href="#">Link</a>
+                        <a class="menu_list_item" href="#">Her bor vi</a>
                       </li>
                       <li>
-                        <a class="menu_list_item" href="#">Link</a>
+                        <a class="menu_list_item" href="#">Faciliteter</a>
+                      </li>
+                      <li>
+                        <a class="menu_list_item" href="#">Information</a>
+                      </li>
+                      <li>
+                        <a class="menu_list_item" href="#">Om os</a>
+                      </li>
+                      <li>
+                        <a class="menu_list_item" href="waitinglist.html">Venteliste</a>
+                      </li>
+                      <li>
+                        <a class="menu_list_button" href="contact.html">Kontakt os</a>
                       </li>
                     </ul>
                 </section>
@@ -35,11 +49,11 @@
             <section class="menu_bottom">
                 <section class="menu_location">
                     <img src="graphics/location_menu.svg" alt="Location Icon">
-                    <p class="font_quicksand">Huholt 2, 6400 Sønderborg</p>
+                    <p>Huholt 2, 6400 Sønderborg</p>
                 </section>
                 <section class="menu_phone">
                     <img src="graphics/phone_menu.svg" alt="Phone Icon">
-                    <p class="font_quicksand">20 83 74 83</p>
+                    <p>20 83 74 83</p>
                 </section>
             </section>
             <hr>
@@ -47,9 +61,12 @@
     </header>
     <main>
         <section class="hero">
-            <img src="images/heroplaceholder.jpg" alt="Hero Video">
+          <!-- <img src="images/heroplaceholder.png" alt="Hero Video"> -->
+            <video class="hero_video" poster="images/heroplaceholder.png" autoplay muted loop>
+                <source src="videos/herovid.webm" type="video/webm">
+            </video> 
             <section class="hero_tagline">
-                <p class="font_quicksand">Stedet for dig og din hest</p>
+                <p>Stedet for dig og din hest</p>
             </section>
         </section>
         <section class="benefits">

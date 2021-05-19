@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huholt Hestepension</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <section class="menu_top">
+                <a href="index.html">
+                    <img src="graphics/logo.svg" alt="Huholt Hestepension Logo" class="menu_logo">
+                </a>
+                <section>
+                    <!-- SOURCE/INSPIRATION: https://dev.to/cydstumpel/creating-a-fold-out-navigation-with-css-only-4g9k  -->
+                    <input class="menu_input" type="checkbox" id="trigger" />
+                    <label class="menu_label" aria-label="open main navigation" for="trigger"><span></span></label>
+                    <ul class="menu_list">
+                    <li>
+                        <a class="menu_list_item" href="index.html">Forside</a>
+                    </li>
+                    <li>
+                        <a class="menu_list_item" href="#">Her bor vi</a>
+                    </li>
+                    <li>
+                        <a class="menu_list_item" href="#">Faciliteter</a>
+                    </li>
+                    <li>
+                        <a class="menu_list_item" href="#">Information</a>
+                    </li>
+                    <li>
+                        <a class="menu_list_item" href="#">Om os</a>
+                    </li>
+                    <li>
+                        <a class="menu_list_item" href="waitinglist.html">Venteliste</a>
+                    </li>
+                    <li>
+                        <a class="menu_list_button" href="contact.html">Kontakt os</a>
+                    </li>
+                    </ul>
+                </section>
+            </section>
+            <section class="menu_bottom">
+                <section class="menu_location">
+                    <img src="graphics/location_menu.svg" alt="Location Icon">
+                    <p>Huholt 2, 6400 Sønderborg</p>
+                </section>
+                <section class="menu_phone">
+                    <img src="graphics/phone_menu.svg" alt="Phone Icon">
+                    <p>20 83 74 83</p>
+                </section>
+            </section>
+            <hr>
+        </nav>
+    </header>
+    <main>
+        <h1 class="title_first">Venteliste</h1>
+        <section class="waitinglist_info">
+            <em>Desværre 😢</em>
+            <em>Der er på nuværende tidspunkt:</em>
+            <em>INGEN LEDIGE PLADSER</em>
+            <p>MEN man ved jo aldrig… Så det vil gøre os rigtig glade, hvis du stadig har lyst til, at skrive dig på ventelisten. I så fald vil du blive kontaktet, når en boks bliver ledig.</p>
+            <em>Vi håber på, at se dit navn på listen🤞</em>
+        </section>
+        <form class="waitinglist_signup">
+            <label for="name">Dit navn</label>
+            <input type="text" id="name" name="name" placeholder="Skriv dit navn her">
+            <label for="phone">Dit telefon nummer</label>
+            <input type="numer" id="phone" name="phone" placeholder="Skriv dit telefon nummer her">
+        </form>
+    </main>
+    <footer>
+        <nav>
+            <img src="graphics/leaves.svg" alt="Leaves Illustration" class="footer_illustration">
+            <section class="footer_some">
+                <a class="footer_some_item">
+                    <img src="graphics/facebook.svg" alt="Facebook Icon">
+                    <p>/Huholt<br>Hestepension</p>
+                </a>
+                <a class="footer_some_item">
+                    <img src="graphics/instagram.svg" alt="Instagram Icon">
+                    <p>@Huholt<br>Hestepension</p>
+                </a>
+            </section>
+            <section class="footer_contact">
+                <section class="footer_contact_location">
+                    <img src="graphics/location_footer.svg" alt="Location Icon">
+                    <p>Huholt 2<br>6400 Sønderborg</p>
+                </section>
+              <img src="graphics/logo.svg" alt="Huholt Hestepension Logo" class="footer_logo"> 
+                <section class="footer_contact_phone">
+                    <img src="graphics/phone_footer.svg" alt="Phone Icon">
+                    <p>20 83 74 83</p>
+                </section>
+            </section>
+        </nav>
+        <hr>
+    </footer>
+</body>    

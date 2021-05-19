@@ -29,6 +29,7 @@ h1 {
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
+    font-size: 2.5em;
 
 }
 
@@ -44,23 +45,17 @@ em {
     font-style: normal;
 }
 
-.font_raleway {
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
+hr {
+    border: 3px solid #005700;
 }
 
-.font_quicksand {
-    font-family: 'Quicksand', sans-serif;
-    text-align: center;
-}
-
-.hidden {
+.title_hidden {
     visibility: hidden;
     font-size: 0;
 }
 
-hr {
-    border: 3px solid #005700;
+.title_first {
+    margin-top: 4em;
 }
 
 /* MENU */
@@ -70,6 +65,8 @@ hr {
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     z-index: 3;
+    max-width: 414px;
+    min-width: 360px;
 }
 
 .menu_top {
@@ -94,6 +91,11 @@ hr {
     grid-template-columns: 65% 35%;
     grid-template-rows: 1;
 
+}
+
+.menu_bottom p {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
 }
 
 .menu_location {
@@ -141,9 +143,9 @@ hr {
 
 /* OPEN MENU */
 
-/* BORROWED CODE FROM: https://dev.to/cydstumpel/creating-a-fold-out-navigation-with-css-only-4g9k */
+/* SOURCE/INSPIRATION: https://dev.to/cydstumpel/creating-a-fold-out-navigation-with-css-only-4g9k */
 
-input {
+.menu_input {
     opacity: 0;
     width: 0;
     height: 0;
@@ -151,7 +153,7 @@ input {
     position: fixed;
   }
 
-  label {
+  .menu_label {
     position: fixed;
     top: 0;
     right: 0;
@@ -163,7 +165,7 @@ input {
     margin: 35px;
   }
   
-  label span {
+  .menu_label span {
     display: block;
     width: 100%;
     background: #E280A1;
@@ -171,8 +173,8 @@ input {
     transition: transform 1s;
   }
   
-  label span::before,
-  label span::after {
+  .menu_label span::before,
+  .menu_label span::after {
     content: "";
     position: absolute;
     left: 0;
@@ -183,17 +185,17 @@ input {
     transition: 0.4s
   }
   
-  label span::before {
+  .menu_label span::before {
     top: 0;
     height: 3px;
   }
   
-  label span::after {
+  .menu_label span::after {
     top: calc(100% - 2px); /* to make the transition easier :) */
     height: 3px;
   }
 
-  ul {
+  .menu_list {
     position: fixed;
     top: 0;
     left: 0;
@@ -203,30 +205,55 @@ input {
     transition: transform 0.2s;
     background: white;
     list-style-type: none;
+    display: grid;
+    grid-template-rows: 9vh 9vh 9vh 9vh 9vh 9vh 9vh;
+    row-gap: .5em;
+    height: 100vh;
+    padding: 5em 3em 3em 3em;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
 
-  }
+.menu_list_item {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.5vh;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
 
-  input:checked + label span {
+.menu_list_button {
+    display: flex;
+    border: 1px solid #E280A1;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #E280A1;
+    border-radius: 20px 20px 20px 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 3.5vh;
+    padding: 3vh;
+    color: #ffffff;
+    align-self: center;
+}
+
+  .menu_input:checked + .menu_label span {
     transform: rotate(45deg);
   }
   
-  input:checked + label span::before, input:checked + label span::after {
+  .menu_input:checked + .menu_label span::before, .menu_input:checked + .menu_label span::after {
     top: calc(50% - 2px);
     transition: 0.4s;
   }
-  input:checked + label span::after {
+  .menu_input:checked + .menu_label span::after {
     transform: rotate(90deg);
   }
 
-  input:checked ~ ul {
+  .menu_input:checked ~ ul {
     transform: none;
     transition: transform 0.4s; 
   }
-
-.menu_list_item {
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-}
 
 /* FOOTER */
 
@@ -239,7 +266,7 @@ input {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4em;
-    margin: 3em 0 1em 0;
+    margin: 2.5em 0 1em 0;
 }
 
 .footer_some_item {
@@ -305,7 +332,7 @@ input {
 .footer_contact_phone img {
     grid-column: 1;
     justify-self: center;
-    margin-left: 2px;
+    margin-left: 3px;
     height: 3.5vh;
 }
 
@@ -318,6 +345,10 @@ input {
     margin-left: 2%;
 }
 
+
+
+
+
 /* FRONT PAGE */
 
 /* HERO SECTION */
@@ -327,20 +358,25 @@ input {
     margin-top: 20vh;
 }
 
+.hero_video {
+    width: 360px;
+}
+
 .hero_tagline {
     position: absolute;
     background-color: #EEEEEE;
     padding: 1em;
     border-radius: 15px 15px 15px 15px;
-    bottom: -35px;
-    right: 25px;
+    bottom: -40px;
+    right: 16px;
     
 }
 
 .hero_tagline p {
+    font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 3vh;
+    font-size: 3.2vh;
 }
 
 /* BENEFITS SECTION */
@@ -449,3 +485,178 @@ input {
 }
 
 
+
+
+
+/* CONTACT PAGE */
+
+/* CONTACT TEXT SECTION */
+
+.contact_text {
+    text-align: center;
+}
+
+.contact_text p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.5vh;
+    margin: 1em auto;
+}
+
+.contact_text p:first-child {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+    margin-top: 1.5em;
+}
+
+.contact_text_hours {
+    display: flex;
+    background-color: #EEEEEE;
+    padding: 1em;
+    width: 8em;
+    border-radius: 20px 20px 20px 20px;
+    justify-content: center;
+    justify-self: center;
+    margin: 3em auto;
+}
+
+.contact_text_hours em {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 4.5vh;
+}
+
+/* CONTACT INFO SECTION */
+
+.contact_info {
+    margin-top: 4em;
+    text-align: center;
+}
+
+.contact_info p:first-child {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+}
+
+.contact_info p:nth-of-type(2) {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+}   
+
+.contact_info_container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: .5em;
+    margin-bottom: 2.5em;
+}
+
+.contact_info_container em {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 4vh;
+    margin-top: .5em;
+}
+
+.contact_button {
+    display: flex;
+    border: 1px solid #148414;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #148414;
+    border-radius: 8px 8px 8px 8px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 2.5vh;
+    padding: 1.8vh 2.3vh;
+    color: #ffffff;
+    align-content: center;
+    margin-top: 1.5em;
+}
+
+.contact_button_attention {
+    border: 1px solid #E280A1;
+    background-color: #E280A1;
+    margin-bottom: 2em;
+}
+
+.contact_button img {
+    margin-right: .3em;
+}
+
+.contact_button_phone {
+    height: 1.2em;
+}
+
+.contact_info_phone, .contact_info_mail {
+    border: .5px solid #148414;
+    border-radius: 8px 8px 8px 8px;
+    width: 80%;
+    height: 50vh;
+    justify-self: center;
+    align-content: center;
+    padding: 2em auto;
+}
+
+.contact_info_phone {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 3.5em;
+    padding-top: 1em;
+}
+
+.contact_info_mail {
+    display: grid;
+    grid-template-rows: 20% 35% 30%;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2em;
+    padding-top: .5em;
+}
+
+
+
+
+/* WAITING LIST PAGE */
+
+.waitinglist_info {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 5fr 2fr;
+    margin: 2em 2em 0 2em;
+    text-align: center;
+    align-items: center;
+    row-gap: 1em;
+}
+
+.waitinglist_info em {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.waitinglist_info p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.waitinglist_signup {
+    margin: 3em 0 4em 0;
+    display: grid;
+}
+
+.waitinglist_signup label {
+    margin-bottom: 1em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.waitinglist_signup input:first-of-type {
+    margin-bottom: 2em;
+}
