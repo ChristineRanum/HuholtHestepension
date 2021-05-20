@@ -45,6 +45,12 @@ em {
     font-style: normal;
 }
 
+strong {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+}
+
 hr {
     border: 3px solid #005700;
 }
@@ -55,8 +61,17 @@ hr {
 }
 
 .title_first {
-    margin-top: 4em;
+    margin-top: 4.5em;
 }
+
+.title_second {
+    margin-top: 1em;
+}
+
+.image_first {
+    margin-top: 20vh;
+}
+
 
 /* MENU */
 
@@ -160,9 +175,9 @@ hr {
     z-index: 10;
     display: flex;
     align-items: center;
-    width: 50px;
-    height: 25px;
-    margin: 35px;
+    width: 45px;
+    height: 20px;
+    margin: 2.2em;
   }
   
   .menu_label span {
@@ -229,13 +244,14 @@ hr {
     text-transform: uppercase;
     text-decoration: none;
     background-color: #E280A1;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 8px 8px 8px 8px;
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
     font-size: 3.5vh;
-    padding: 3vh;
+    padding: 1.8vh 2.3vh;
     color: #ffffff;
-    align-self: center;
+    text-align: center;
+    justify-self: center;
 }
 
   .menu_input:checked + .menu_label span {
@@ -341,6 +357,7 @@ hr {
     grid-column: 2;
     font-family: 'Quicksand', sans-serif;
     font-size: 3vh;
+    font-weight: 400;
     color: #ffffff;
     margin-left: 2%;
 }
@@ -358,7 +375,7 @@ hr {
     margin-top: 20vh;
 }
 
-.hero_video {
+.hero_video, .video {
     width: 360px;
 }
 
@@ -487,6 +504,305 @@ hr {
 
 
 
+/* LOCATION PAGE */
+
+.location_text {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+/* MAP SECTION */
+
+.location_map_image {
+    margin-top: 3em;
+}
+
+.location_map_address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE;
+    width: 83vw;
+    height: 7vh;
+    border-radius: 8px 8px 8px 8px;
+    margin: .5em auto 0 auto;
+}
+
+.location_map_address img {
+    margin-right: .5em;
+    height: 4vh;
+}
+
+.location_map_address p {
+    font-size: 3vh;
+}
+
+/* ROUTE MAP SECTION */
+
+.location_routemap {
+    margin-top: 5em;
+    justify-content: center;
+}
+
+.location_routemap p, .location_slideshow p {
+    margin: 1em auto 2em auto;
+}
+
+.location_routemap em {
+    text-transform: uppercase;
+    font-size: 3vh;
+}
+
+.location_routemap_symbols {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    margin: .5em .5em 0 .5em;
+    column-gap: .2em;
+    justify-items: center;
+    text-align: center;
+}
+
+.location_routemap_symbol {
+    display: flex;
+    background-color: #EEEEEE;
+    align-items: center;
+    justify-content: center;
+    width: 43vw;
+    height: 7.5vh;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.location_routemap_symbol img {
+    margin-right: .5em;
+}
+
+.location_routemap_symbols section:nth-of-type(2) {
+    width: 50vw;
+}
+
+/* ON A TRIP SLIDESHOW SECTION */
+
+.location_slideshow {
+    margin: 5em 0 4em 0;
+}
+
+.location_slideshow p {
+    width: 70vw;
+    text-align: center;
+}
+
+
+
+/* INFORMATION PAGE */
+
+.information_text {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.information h2 {
+    margin: 3em 0 1em 0;
+}
+
+/* INFORMATION DESCRIPTION SECTION */ 
+
+.information_description {
+    display: grid;
+    grid-row: 1fr 1fr;
+    row-gap: 1em;
+    margin: 2em 2em 0 2em;
+    text-align: center;
+}
+
+.information_description span {
+    font-weight: 500;
+}
+
+/* INFORMATION PRICES SECTION */
+
+.information_prices {
+    display: grid;
+    grid-row: 1fr 1fr;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.information_prices_item {
+    display: flex;
+    background-color: #EEEEEE;
+    border-radius: 8px 8px 8px 8px;
+    height: 6vh;
+    width: 45vh;
+    margin: 1em auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em 0 1em;
+}
+
+.information_priceincludes {
+    text-align: center;
+    margin-top: 2.5em;
+}
+
+.information_priceincludes_item {
+    display: flex;
+    justify-self: center;
+    margin: 1em auto;
+    justify-content: center;
+}
+
+.information_priceincludes_item img {
+    margin-right: .5em;
+}
+
+/* RULES AND GUIDELINES SECTION */
+
+.information_rules {
+    display: grid;
+    grid-row: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 2.5em;
+    margin: .5em 2em 4em 2em;
+}
+
+.information_rules_item {
+    display: grid;
+    grid-row: 1fr 3fr;
+    align-items: center;
+    justify-items: center;
+    row-gap: 1em;
+}
+
+
+
+
+
+/* ABOUT US PAGE */
+
+.aboutus_text {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+/* ABOUT US DESCRIPTION SECTION */
+
+.aboutus_description {
+    display: grid;
+    grid-row: 1fr 4fr 1fr;
+    row-gap: 1em;
+    margin: 2em 1.5em 3em 1.5em;
+    text-align: center;
+    align-content: center;
+}
+
+.aboutus_description_mission {
+    background-color: #EEEEEE;
+    margin: 2em 1.5em 2em 1.5em;
+    padding: 1.5em;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.aboutus_description_mission strong {
+    text-transform: uppercase;
+}
+
+.aboutus_description_mission p {
+    margin-top: 1em;
+}
+
+.aboutus_description_mission span {
+    font-weight: 600;
+}
+
+/* WE LOVE HORSES SLIDESHOW SECTION */
+
+.aboutus_slideshow {
+    margin-bottom: 4em;
+}
+
+.aboutus_slideshow p {
+    margin: 1em auto 2em auto;
+}
+
+
+
+
+
+/* WAITING LIST PAGE */
+
+/* WAITING LIST INFO SECTION */
+
+.waitinglist_info {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 5fr 2fr;
+    margin: 2em 2em 0 2em;
+    text-align: center;
+    align-items: center;
+    row-gap: 1em;
+}
+
+.waitinglist_info em {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.waitinglist_info p {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* WAITING LIST SIGN UP SECTION */ 
+
+.waitinglist_signup {
+    margin: 3em 0 4em 0;
+    display: grid;
+}
+
+.waitinglist_signup label {
+    margin-bottom: 1em;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.waitinglist_signup input {
+    width: 45vh;
+    height: 6vh;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    border: 1px solid #148414;
+    border-radius: 8px 8px 8px 8px;
+}
+
+.waitinglist_signup input:first-of-type {
+    margin-bottom: 3em;
+}
+
+.waitinglist_signup input::placeholder {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.waitinglist_signup button {
+    display: flex;
+    border: 1px solid #E280A1;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #E280A1;
+    border-radius: 8px 8px 8px 8px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 3vh;
+    padding: 1.8vh 2.3vh;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 3.5em;
+    justify-self: center;
+}
+
+
+
 
 /* CONTACT PAGE */
 
@@ -494,6 +810,7 @@ hr {
 
 .contact_text {
     text-align: center;
+    margin-top: 2em;
 }
 
 .contact_text p {
@@ -502,11 +819,8 @@ hr {
     margin: 1em auto;
 }
 
-.contact_text p:first-child {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+.contact_text p:nth-of-type(2) {
     font-size: 3vh;
-    margin-top: 1.5em;
 }
 
 .contact_text_hours {
@@ -531,9 +845,10 @@ hr {
 .contact_info {
     margin-top: 4em;
     text-align: center;
+    display: grid;
 }
 
-.contact_info p:first-child {
+.contact_info strong:first-child {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 3vh;
@@ -541,7 +856,7 @@ hr {
     margin-bottom: .5em;
 }
 
-.contact_info p:nth-of-type(2) {
+.contact_info strong:nth-of-type(2) {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 3vh;
@@ -619,44 +934,3 @@ hr {
     padding-top: .5em;
 }
 
-
-
-
-/* WAITING LIST PAGE */
-
-.waitinglist_info {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 5fr 2fr;
-    margin: 2em 2em 0 2em;
-    text-align: center;
-    align-items: center;
-    row-gap: 1em;
-}
-
-.waitinglist_info em {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 1.2em;
-}
-
-.waitinglist_info p {
-    font-family: 'Quicksand', sans-serif;
-}
-
-.waitinglist_signup {
-    margin: 3em 0 4em 0;
-    display: grid;
-}
-
-.waitinglist_signup label {
-    margin-bottom: 1em;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
-    font-size: 3vh;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.waitinglist_signup input:first-of-type {
-    margin-bottom: 2em;
-}

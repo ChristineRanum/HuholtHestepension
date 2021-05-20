@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huholt Hestepension</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <section class="menu_top">
+                <a href="index.html">
+                    <img src="graphics/logo.svg" alt="Huholt Hestepension Logo" class="menu_logo">
+                </a>
+                <section>
+                    <!-- SOURCE/INSPIRATION: https://dev.to/cydstumpel/creating-a-fold-out-navigation-with-css-only-4g9k  -->
+                    <input class="menu_input" type="checkbox" id="trigger" />
+                    <label class="menu_label" aria-label="open main navigation" for="trigger"><span></span></label>
+                    <ul class="menu_list">
+                      <li>
+                        <a class="menu_list_item" href="index.html">Forside</a>
+                      </li>
+                      <li>
+                        <a class="menu_list_item" href="location.html">Her bor vi</a>
+                      </li>
+                      <li>
+                        <a class="menu_list_item" href="facilities.html">Faciliteter</a>
+                      </li>
+                      <li>
+                        <a class="menu_list_item" href="information.html">Information</a>
+                      </li>
+                      <li>
+                        <a class="menu_list_item" href="aboutus.html">Om os</a>
+                      </li>
+                      <li>
+                        <a class="menu_list_item" href="waitinglist.html">Venteliste</a>
+                      </li>
+                      <li>
+                        <a class="menu_list_button" href="contact.html">Kontakt os</a>
+                      </li>
+                    </ul>
+                </section>
+            </section>
+            <section class="menu_bottom">
+                <section class="menu_location">
+                    <img src="graphics/location_menu.svg" alt="Location Icon">
+                    <p>Huholt 2, 6400 Sønderborg</p>
+                </section>
+                <section class="menu_phone">
+                    <img src="graphics/phone_menu.svg" alt="Phone Icon">
+                    <p>20 83 74 83</p>
+                </section>
+            </section>
+            <hr>
+        </nav>
+    </header>
+    <main id="aboutus_top">
+        <img class="image_first" src="images/aboutus.jpg" alt="Picture of Huholt Hestepension">
+        <h1 class="title_second">Om os</h1>
+        <section class="aboutus_description">
+            <strong>Huholt Hestepension har frem for alt kærlighed til, og passion for, hesten.</strong>
+            <p class="aboutus_text">Vi er en lille og kærlig selvpasser stald tæt på naturen, hvor selskab med hest og ryttere nydes. Nuværende ejer’s kone Lotte Ranum Damsgaard, fungerer som administrator og har selv to heste opstaldet på stedet. Lotte har 40+ års erfaring indenfor omgang med heste, og er til rådighed flere gange dagligt. Derudover er alle opstaldere, nye som gamle, også med til at gøre Huholt Hestepension til et godt sted at være. Her hjælper vi nemlig hinanden med at få klaret de daglige opgaver, så vi kan fokusere på det der virkelig betyder noget; at bruge tid med vores heste. </p>
+            <section class="aboutus_description_mission">
+                <strong>Vores mission er:</strong>
+                <p class="aboutus_text">at sætte <span>hestens velfærd</span> i fokus og skabe et sted, der er rart for både dyr og mennesker at være</p>
+            </section>
+        </section>
+        <section class="aboutus_slideshow">
+            <h2>Vi elsker heste</h2>
+            <p class="aboutus_text">Kærligheden til vores firbenede venner er det der driver os</p>
+            <video class="video" poster="images/welovehorses_placeholder.png" autoplay muted loop>
+                <source src="https://onedrive.live.com/download?cid=F32A6299290A20C3&resid=F32A6299290A20C3%212730&authkey=AGyaUA3l_dW4Kdo">
+            </video>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <img src="graphics/leaves.svg" alt="Leaves Illustration" class="footer_illustration">
+            <section class="footer_some">
+                <a class="footer_some_item">
+                    <img src="graphics/facebook.svg" alt="Facebook Icon">
+                    <p>/Huholt<br>Hestepension</p>
+                </a>
+                <a class="footer_some_item">
+                    <img src="graphics/instagram.svg" alt="Instagram Icon">
+                    <p>@Huholt<br>Hestepension</p>
+                </a>
+            </section>
+            <section class="footer_contact">
+                <a href="location.html" class="footer_contact_location">
+                    <img src="graphics/location_footer.svg" alt="Location Icon">
+                    <p>Huholt 2<br>6400 Sønderborg</p>
+                </a>
+                <a href="index.html">
+                    <img src="graphics/logo.svg" alt="Huholt Hestepension Logo" class="footer_logo">
+                </a> 
+                <a href="contact.html" class="footer_contact_phone">
+                    <img src="graphics/phone_footer.svg" alt="Phone Icon">
+                    <p>20 83 74 83</p>
+                </a>
+            </section>
+        </nav>
+        <hr>
+    </footer>
+</body>    
