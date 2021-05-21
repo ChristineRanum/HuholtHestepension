@@ -72,6 +72,18 @@ hr {
     margin-top: 20vh;
 }
 
+.info_bar {
+    display: flex;
+    background-color: #EEEEEE;
+    border-radius: 8px 8px 8px 8px;
+    height: 6vh;
+    width: 45vh;
+    margin: 1em auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em 0 1em;
+}
+
 
 /* MENU */
 
@@ -368,6 +380,10 @@ hr {
 
 /* FRONT PAGE */
 
+.front_text  {
+    font-family: 'Quicksand', sans-serif;
+}
+
 /* HERO SECTION */
 
 .hero {
@@ -390,7 +406,6 @@ hr {
 }
 
 .hero_tagline p {
-    font-family: 'Quicksand', sans-serif;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 3.2vh;
@@ -405,6 +420,11 @@ hr {
     margin: 4em 0em 4em 0em;
     padding: 0 .5em 0 .5em;
     justify-items: center;
+}
+
+.benefits strong {
+    font-weight: 600;
+    font-size: 3vh;
 }
 
 .benefits_card {
@@ -423,15 +443,7 @@ hr {
     margin: 1em;
 }
 
-.benefits_card em {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 3vh;
-}
-
 .benefits_card p {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
     font-size: 2vh;
     margin: 1em 1.5em 2em 1em;
 }
@@ -455,11 +467,6 @@ hr {
 
 .weoffer_points_item img {
     margin-right: .5em;
-}
-
-.weoffer_points_item {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
 }
     
 .weoffer_image {
@@ -485,13 +492,7 @@ hr {
 }
 
 .quotes_container_item img {
-    margin-top: 2em;
-    /* margin: 2em 0em .5em 0em; */
-}
-
-.quotes_container_item_text {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
+    margin: 2em 0 .5em 0;
 }
 
 .quotes_container_item_source {
@@ -504,11 +505,35 @@ hr {
 
 
 
+
 /* LOCATION PAGE */
 
 .location_text {
     font-family: 'Quicksand', sans-serif;
     text-align: center;
+}
+
+/* GOOGLE MAPS SOURCE/INSPIRATION: https://www.embedgooglemap.net */
+/* GOOGLE MAPS SECTION */
+
+.gmap_container {
+    position: relative;
+    text-align: right;
+    height: 240px;
+    width: 360px;
+    margin: 2em 0 1em 0;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 240px;
+    width: 360px;
+}
+
+.gmap_container iframe {
+    width: 100%; 
+    height: 240px;
 }
 
 /* MAP SECTION */
@@ -593,6 +618,117 @@ hr {
 
 
 
+
+/* FACILITIES PAGE */
+
+.facilities_text {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.facilities {
+    margin-bottom: 4em;
+}
+
+/* FACILITIES SUBMENU SECTION */
+
+.facilities p:first-child {
+    margin: 2em 2em 1.5em 2em;
+}
+
+.facilities_submenu {
+    display: grid;
+    justify-items: center;
+    list-style-type: none;
+    row-gap: 3em;
+    margin-top: 3em;
+}
+
+.facilities_submenu_item {
+    justify-self: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 3.2vh;
+}
+
+/* STABLES SECTION */
+
+.facilities video {
+    margin-top: 20vh;
+}
+
+.facilities h2 {
+    margin: 3em 0 1.5em 0;
+}
+
+.facilities_stables {
+    display: grid;
+}
+
+.facilities_stables strong {
+    display: flex;
+    text-align: center;
+    margin: 2em auto 0 auto;
+}
+
+.facilities_stables_size {
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.facilities_stables img:nth-of-type(3) {
+    margin-top: 2em;
+}
+
+/* FIELDS SECTION */
+
+.facilities_fields {
+    display: grid;
+    justify-items: center;
+}
+
+.facilities_fields_info {
+    display: grid
+}
+
+.facilities_fields strong {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2em 0 1.5em 0;
+    font-size: 4vh;
+}
+
+.facilities_fields_info section:first-of-type {
+    margin-top: 3em;
+}
+
+.facilities_fields_hours {
+    display: grid;
+    background-color: #EEEEEE;
+    margin: 0 1.5em 3em 1.5em;
+    padding: 1.5em;
+    border-radius: 12px 12px 12px 12px;
+    justify-content: center;
+}
+
+.facilities_fields_hours em {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    justify-self: center;
+    font-size: 2.5vh;
+}
+
+.facilities_fields_hours p {
+    font-size: 4vh;
+    margin-top: .5em;
+}
+
+
+
+
 /* INFORMATION PAGE */
 
 .information_text {
@@ -601,7 +737,7 @@ hr {
 }
 
 .information h2 {
-    margin: 3em 0 1em 0;
+    margin: 2.5em 0 1em 0;
 }
 
 /* INFORMATION DESCRIPTION SECTION */ 
@@ -627,21 +763,14 @@ hr {
     margin-top: 1em;
 }
 
-.information_prices_item {
-    display: flex;
-    background-color: #EEEEEE;
-    border-radius: 8px 8px 8px 8px;
-    height: 6vh;
-    width: 45vh;
-    margin: 1em auto;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1em 0 1em;
+.information_priceincludes {
+    display: grid;
+    text-align: center;
+    margin-top: 3em;
 }
 
-.information_priceincludes {
-    text-align: center;
-    margin-top: 2.5em;
+.information_priceincludes strong {
+    margin-bottom: 1em;
 }
 
 .information_priceincludes_item {
@@ -729,6 +858,10 @@ hr {
 
 /* WAITING LIST PAGE */
 
+.waitinglist_text {
+    font-family: 'Quicksand', sans-serif;
+}
+
 /* WAITING LIST INFO SECTION */
 
 .waitinglist_info {
@@ -740,20 +873,10 @@ hr {
     row-gap: 1em;
 }
 
-.waitinglist_info em {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 1.2em;
-}
-
-.waitinglist_info p {
-    font-family: 'Quicksand', sans-serif;
-}
-
 /* WAITING LIST SIGN UP SECTION */ 
 
 .waitinglist_signup {
-    margin: 3em 0 4em 0;
+    margin: 3.5em 0 4em 0;
     display: grid;
 }
 
@@ -784,7 +907,7 @@ hr {
     font-family: 'Quicksand', sans-serif;
 }
 
-.waitinglist_signup button {
+#modal_button {
     display: flex;
     border: 1px solid #E280A1;
     text-transform: uppercase;
@@ -797,33 +920,95 @@ hr {
     padding: 1.8vh 2.3vh;
     color: #ffffff;
     text-align: center;
-    margin-top: 3.5em;
+    margin: 3em auto 4em auto;
     justify-self: center;
 }
+
+/* WAITING LIST MODAL BOX */
+
+/* SOURCE/INSPIRATION: https://www.w3schools.com/howto/howto_css_modals.asp */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal_content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 2em 2em 3em 2em;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    display: grid;
+  }
+
+  .modal_content strong {
+      font-weight: 700;
+      font-size: 5vh;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 1.5em;
+  }
+
+  .modal_content p {
+      font-family: 'Quicksand', sans-serif;
+      text-align: center;
+      margin-top: .5em;
+  }
+  
+  /* The Close Button */
+  .modal_close {
+    color: #E280A1;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .modal_close:hover,
+  .modal_close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
 
 
 
 
 /* CONTACT PAGE */
 
+.contact_text, .contact em {
+    font-family: 'Quicksand', sans-serif;
+}
+
+
 /* CONTACT TEXT SECTION */
 
-.contact_text {
+.contact_description {
     text-align: center;
     margin-top: 2em;
 }
 
-.contact_text p {
-    font-family: 'Quicksand', sans-serif;
+.contact_description p {
     font-size: 2.5vh;
     margin: 1em auto;
 }
 
-.contact_text p:nth-of-type(2) {
+.contact_description p:nth-of-type(2) {
     font-size: 3vh;
 }
 
-.contact_text_hours {
+.contact_description_hours {
     display: flex;
     background-color: #EEEEEE;
     padding: 1em;
@@ -834,8 +1019,7 @@ hr {
     margin: 3em auto;
 }
 
-.contact_text_hours em {
-    font-family: 'Quicksand', sans-serif;
+.contact_description_hours em {
     font-weight: 500;
     font-size: 4.5vh;
 }
@@ -849,18 +1033,10 @@ hr {
 }
 
 .contact_info strong:first-child {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
     font-size: 3vh;
     text-transform: uppercase;
     margin-bottom: .5em;
-}
-
-.contact_info strong:nth-of-type(2) {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 3vh;
-}   
+}  
 
 .contact_info_container {
     display: grid;
@@ -870,9 +1046,8 @@ hr {
 }
 
 .contact_info_container em {
-    font-family: 'Quicksand', sans-serif;
     font-weight: 400;
-    font-size: 4vh;
+    font-size: 3.5vh;
     margin-top: .5em;
 }
 
@@ -898,6 +1073,10 @@ hr {
     margin-bottom: 2em;
 }
 
+.contact_info_mail a {
+    margin-top: 0em;
+}
+
 .contact_button img {
     margin-right: .3em;
 }
@@ -910,7 +1089,7 @@ hr {
     border: .5px solid #148414;
     border-radius: 8px 8px 8px 8px;
     width: 80%;
-    height: 50vh;
+    height: 20em;
     justify-self: center;
     align-content: center;
     padding: 2em auto;
@@ -927,7 +1106,7 @@ hr {
 
 .contact_info_mail {
     display: grid;
-    grid-template-rows: 20% 35% 30%;
+    grid-template-rows: 20% 35% 25%;
     justify-items: center;
     align-items: center;
     margin-top: 2em;

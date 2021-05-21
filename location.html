@@ -61,7 +61,13 @@
     <main>
         <h1 class="title_first">Her bor vi</h1>
         <section class="location_map">
-            <img src="images/map.png" alt="Map with Location" class="location_map_image">
+            <!-- GOOGLE MAPS SOURCE/INSPIRATION: https://www.embedgooglemap.net-->
+            <section class="gmap_container">
+                <section class="gmap_canvas">
+                    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=huholt%20hestepension&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <a href="https://www.embedgooglemap.net">google map on your website</a>
+                </section>
+            </section>
             <section class="location_map_address">
                 <img src="graphics/location.svg" alt="Location Icon">
                 <p class="location_text">Huholt 2, 6400 Sønderborg</p>
@@ -69,7 +75,7 @@
         </section>
         <section class="location_routemap">
             <h2>I nærheden af..</h2>
-            <p class="location_text">(inden for 5km)</p>
+            <p class="location_text">(inden for 5 km)</p>
             <img src="images/routemap.png" alt="Map with Routes" class="location_routemap_image">
             <section class="location_routemap_symbols">
                 <section class="location_routemap_symbol">
@@ -119,4 +125,5 @@
         </nav>
         <hr>
     </footer>
-</body>    
+</body>
+</html>    

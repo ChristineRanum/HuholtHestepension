@@ -8,6 +8,7 @@
     <link href="styles.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header>
@@ -61,19 +62,33 @@
     <main>
         <h1 class="title_first">Venteliste</h1>
         <section class="waitinglist_info">
-            <em>Desværre 😢</em>
-            <em>Der er på nuværende tidspunkt:</em>
-            <em>INGEN LEDIGE PLADSER</em>
-            <p>MEN man ved jo aldrig… Så det vil gøre os rigtig glade, hvis du stadig har lyst til, at skrive dig på ventelisten. I så fald vil du blive kontaktet, når en boks bliver ledig.</p>
-            <em>Vi håber på, at se dit navn på listen🤞</em>
+            <strong>Desværre 😢</strong>
+            <strong>Der er på nuværende tidspunkt:</strong>
+            <strong>INGEN LEDIGE PLADSER</strong>
+            <p class="waitinglist_text">MEN man ved jo aldrig… Så det vil gøre os rigtig glade, hvis du stadig har lyst til, at skrive dig på ventelisten. I så fald vil du blive kontaktet, når en boks bliver ledig.</p>
+            <strong>Vi håber på, at se dit navn på listen🤞</strong>
         </section>
         <form class="waitinglist_signup">
             <label for="name">Dit navn</label>
             <input type="text" id="name" name="name" placeholder="Skriv dit navn her">
             <label for="phone">Dit telefon nummer</label>
             <input type="numer" id="phone" name="phone" placeholder="Skriv dit telefon nummer her">
-            <button>Skriv mig på</button>
         </form>
+
+        <!-- SOURCE/INSPIRATION: https://www.w3schools.com/howto/howto_css_modals.asp -->
+        <!-- Trigger/Open The Modal -->
+        <button id="modal_button">Skriv mig på</button>
+        <!-- The Modal -->
+        <section id="modal" class="modal">
+            <!-- Modal content -->
+            <section class="modal_content">
+                <span class="modal_close">&times;</span>
+                <img src="/graphics/TY.svg" alt="Horse Mascot Saying Thank You" class="animate__animated animate__bounce">
+                <strong>Mange tak</strong>
+                <p>Du er nu skrevet på ventelisten</p>
+            </section>
+        </section>
+
     </main>
     <footer>
         <nav>
@@ -104,4 +119,6 @@
         </nav>
         <hr>
     </footer>
-</body>    
+    <script src="script.js"></script>
+</body>
+</html>    
