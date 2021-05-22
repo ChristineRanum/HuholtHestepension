@@ -1176,6 +1176,10 @@ hr {
         margin: 10%;
     }
 
+    .menu_phone img {
+        height: 3.5vh;
+    }
+
 }
 
 @media (min-height: 749px) {
@@ -1191,6 +1195,10 @@ hr {
     .menu_logo {
         margin: 1%;
         width: 26%;
+    }
+
+    .menu_phone img {
+        height: 2.8vh;
     }
 
     /* FOOTER */
@@ -1238,6 +1246,10 @@ hr {
 
     .menu_label {
         margin-top: 3em;
+    }
+
+    .menu_phone img {
+        height: 2.5vh;
     }
 
     /* WAITING LIST */
