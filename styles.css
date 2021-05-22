@@ -75,12 +75,10 @@ hr {
     display: flex;
     background-color: #EEEEEE;
     border-radius: 8px 8px 8px 8px;
-    height: 6vh;
-    width: 45vh;
-    margin: 1em auto;
+    margin: 1em 2em 1em 2em;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1em 0 1em;
+    padding: 1em;
 }
 
 
@@ -98,10 +96,15 @@ hr {
     justify-content: space-between;
     height: 14vh;
     background-color: #FFFFFF;
+    align-items: center;
 }
 
 .menu_logo {
-    margin: .2em;
+    display: flex;
+    margin: 1%;
+    width: 5.8em;
+    width: 26%;
+    align-self: center;
 }
 
 .menu_button {
@@ -125,7 +128,6 @@ hr {
 .menu_location {
     height: 2em;
     grid-column: 1;
-    text-align: center;
     background-color: #EEEEEE;
     display: grid;
     grid-template-columns: 10% 90%;
@@ -138,6 +140,8 @@ hr {
 
 .menu_location p {
     align-self: center;
+    justify-self: left;
+    margin-left: 2%;
 }
 
 .menu_phone {
@@ -184,9 +188,9 @@ hr {
     z-index: 10;
     display: flex;
     align-items: center;
-    width: 45px;
-    height: 20px;
-    margin: 2.2em;
+    width: 3em;
+    height: 1.3em;
+    margin: 2.2em 2.2em 2.2em 2.2em;
   }
   
   .menu_label span {
@@ -344,7 +348,9 @@ hr {
     grid-column: 2;
     position: absolute; 
     bottom: 0%;
-    margin-left: .3em;
+    right: 60%;
+    /*margin-left: .3em;*/
+    width: 5.5em;
 }
 
 .footer_contact_phone {
@@ -661,8 +667,6 @@ hr {
 }
 
 .facilities_stables_size {
-    display: grid;
-    grid-row: 1fr 1fr 1fr;
     justify-content: center;
     margin-top: 1em;
 }
@@ -746,10 +750,12 @@ hr {
 /* INFORMATION PRICES SECTION */
 
 .information_prices {
-    display: grid;
-    grid-row: 1fr 1fr;
     justify-content: center;
     margin-top: 1em;
+}
+
+.information_prices section {
+    margin: 2em 1.5em 2em 1.5em;
 }
 
 .information_priceincludes {
@@ -838,7 +844,7 @@ hr {
 }
 
 .aboutus_slideshow p {
-    margin: 1em auto 2em auto;
+    margin: 1em 1.5em 2em 1.5em;
 }
 
 
@@ -1102,3 +1108,224 @@ hr {
     margin-top: 2em;
     padding-top: .5em;
 }
+
+
+
+
+
+/* MEDIA QUERY MOBILE */
+
+@media (min-width: 370px) {
+
+    /* MENU */
+
+    .menu_logo {
+        margin: 1%;
+        width: 23%;
+    }
+
+}
+
+@media (min-width: 390px) {
+
+    /* FOOTER */
+
+    .footer_logo {
+        margin-right: .3em;
+    }
+
+}
+
+@media (min-height: 690px) {
+
+    /* MENU */
+
+    .menu_label {
+        margin: 2.3em 2.2em 2.2em 2.2em;
+    }
+
+    /* FRONT */
+
+    .hero video {
+        margin-top: -1%;
+    }
+
+}
+
+@media (min-height: 720px) {
+
+    /* MENU */
+
+    .menu_label {
+        margin: 2.3em 2.2em 2.2em 2.2em;
+    }
+
+    /* FRONT */
+
+    .hero video {
+        margin-top: -2%;
+    }
+
+}
+
+@media (min-height: 760px) {
+
+    /* MENU */
+
+    .menu_label {
+        margin: 10%;
+    }
+
+}
+
+@media (min-height: 749px) {
+
+    /* GENERAL STYLES */ 
+
+    .image_first {
+        margin-top: 19vh;
+    }
+
+    /* MENU */
+
+    .menu_logo {
+        margin: 1%;
+        width: 26%;
+    }
+
+    /* FOOTER */
+
+    .footer_contact_location p {
+        font-size: 1.8vh;
+    }
+
+    .footer_contact_phone p {
+        font-size: 2.8vh;
+    }
+
+    /* FRONT */
+
+    .hero video {
+        margin-top: -2vh;
+    }
+
+    /* FACILITIES */
+
+    .facilities video {
+        margin-top: 19vh;
+    }
+
+    /* CONTACT */
+
+    .contact_description_hours {
+        width: 9em;
+    }
+
+    .contact_info_phone {
+        margin-top: 4.5em;
+    }
+
+    .contact_info_phone, .contact_info_mail {
+        width: 18em;
+        height: 22em;
+    }
+
+}
+
+@media (min-height: 788px) {
+
+    /* MENU */
+
+    .menu_label {
+        margin-top: 3em;
+    }
+
+    /* WAITING LIST */
+
+    .waitinglist_info {
+        grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+    }
+
+    .waitinglist_signup {
+        margin-top: 5em;
+    }
+
+    .waitinglist_signup input {
+        width: 40vh;
+    }
+
+
+}
+
+@media (min-height: 814px) {
+
+    /* GENERAL STYLES */
+
+    .title_first {
+        margin-top: 5em;
+    }
+
+    .image_first {
+        margin-top: 18vh;
+    }
+
+    /* FOOTER */
+
+    .footer_contact_phone p {
+        font-size: 2.5vh;
+        margin-left: -.2em;
+    }
+
+    .footer_contact_phone img {
+        height: 3vh;
+        margin-left: -.5em;
+    }
+
+    .footer_contact_location p {
+        font-size: 1.5vh;
+    }
+
+    /* FRONT */
+
+    .benefits_card {
+        height: 45vh;
+    }
+
+    /* LOCATION */
+
+    .location_map_address p {
+        font-size: 2.5vh;
+    }
+
+    /* FACILITIES */
+
+    .facilities video {
+        margin-top: 18vh;
+    }
+
+    .facilities_submenu_item {
+        font-size: 1.5em;
+    }
+
+    /* CONTACT */
+
+    .contact_description_hours {
+        width: 10em;
+    }
+
+    .contact_info_container em {
+        font-size: 3vh;
+    }
+
+    .contact_info_phone {
+        padding-top: 2em;
+    }
+}
+
+@media (min-height: 880px) {
+
+    /* MENU */
+
+    .menu_label {
+        margin-top: 3.5em;
+    }
