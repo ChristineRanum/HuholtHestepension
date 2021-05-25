@@ -116,8 +116,6 @@ hr {
 .menu_bottom {
     display: grid;
     grid-template-columns: 65% 35%;
-    grid-template-rows: 1;
-
 }
 
 .menu_bottom p {
@@ -349,7 +347,6 @@ hr {
     position: absolute; 
     bottom: 0%;
     right: 60%;
-    /*margin-left: .3em;*/
     width: 5.5em;
 }
 
@@ -423,8 +420,6 @@ hr {
     background-color: #EEEEEE;
     border-radius: 15px 15px 15px 15px;
     margin: .5em;
-    /*height: 16em;
-    width: 10em;*/
     text-align: center;
     justify-content: center;
 }
@@ -737,7 +732,7 @@ hr {
 
 .information_description {
     display: grid;
-    grid-row: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     row-gap: 1em;
     margin: 2em 2em 0 2em;
     text-align: center;
@@ -783,14 +778,13 @@ hr {
 
 .information_rules {
     display: grid;
-    grid-row: 1fr 1fr 1fr 1fr 1fr;
     row-gap: 2.5em;
     margin: .5em 2em 4em 2em;
 }
 
 .information_rules_item {
     display: grid;
-    grid-row: 1fr 3fr;
+    grid-template-rows: 1fr 3fr;
     align-items: center;
     justify-items: center;
     row-gap: 1em;
@@ -811,7 +805,6 @@ hr {
 
 .aboutus_description {
     display: grid;
-    grid-row: 1fr 4fr 1fr;
     row-gap: 1em;
     margin: 2em 1.5em 3em 1.5em;
     text-align: center;
@@ -1056,11 +1049,11 @@ hr {
     border-radius: 8px 8px 8px 8px;
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
-    font-size: 2.5vh;
-    padding: 1.8vh 2.3vh;
+    font-size: 2.2vh;
+    padding: 1.6vh 2vh;
     color: #ffffff;
     align-content: center;
-    margin-top: 1.5em;
+    margin-top: 1.7em;
 }
 
 .contact_button_attention {
@@ -1088,7 +1081,6 @@ hr {
     height: 20em;
     justify-self: center;
     align-content: center;
-    padding: 2em auto;
 }
 
 .contact_info_phone {
@@ -1113,7 +1105,7 @@ hr {
 
 
 
-/* MEDIA QUERY MOBILE */
+/* MEDIA QUERIES FOR MOBILE */
 
 @media (min-width: 370px) {
 
